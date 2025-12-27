@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+}
+
+.divBtn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+}
+
+#containerDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    background: #D55075;
+}
+
+.yellow {
+    background: #FA903B;
+}
+
+.green {
+    background: #58A0B9;
+}
+
+.purple {
+    background: #7794F8;
+}
+
+.flash {
+    background: whitesmoke;
+}
+
+.userFlash {
+    background: cyan;
+}

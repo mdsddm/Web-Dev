@@ -1,0 +1,14 @@
+{
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showExpandedAbbreviation": "always",
+    "emmet.showAbbreviationSuggestions": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.suggest.showSnippets": true,
+    "editor.snippetSuggestions": "top",
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.inlineSuggest.enabled": false
+}
