@@ -34,6 +34,14 @@ app.get("/:username/:id", (req, res) => {
     let str = `Welcome Mr. ${username} `;
     res.send(str);
 });
+app.get("/search", (req, res) => {
+    let { q } = req.query;
+    console.log(req.query);
+    if (!q) {
+        res.send("<h1>Nothing Search</h1>");
+    }
+    res.send(`<h1>search result for : ${q}</h1>`);
+})
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 });
