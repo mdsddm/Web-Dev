@@ -3,9 +3,11 @@ const app = express();
 const mongoose = require("mongoose");
 const path = require("path");
 const Chat = require("./models/chat.js");
+const methodOverride = require("method-override");
 app.set("views", path.join(__dirname, "/views"));
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "/public/css")));
+app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: true }))
 main().then((res) => {
     console.log('Successfully connected to mongo');
@@ -43,9 +45,29 @@ app.post("/chats", (req, res) => {
         })
     res.redirect("/chats");
 })
-app.get("/", (req, res) => {
-    res.send("<h1>You are in home page</h1>")
+// edit route
+app.get("/chats/:id/edit", async (req, res) => {
+    let { id } = req.params;
+    let chat = await Chat.findById(id);
+    res.render("edit.ejs", { chat });
 })
+app.put("/chats/:id", async (req, res) => {
+    let { id } = req.params;
+    let { msg: newMsg } = req.body;
+    let updateChat = await Chat.findByIdAndUpdate(id, { msg: newMsg }, { runValidators: true, new: true });
+    res.redirect("/chats");
+})
+
+// destroy route
+app.delete("/chats/:id", async (req, res) => {
+    let { id } = req.params;
+    await Chat.findByIdAndDelete(id);
+    res.redirect("/chats");
+})
+app.get("/", (req, res) => {
+    res.redirect("/chats");
+})
+
 
 app.listen(8080, () => {
     console.log("app is listening on port 8080");
