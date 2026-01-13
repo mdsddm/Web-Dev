@@ -1,6 +1,7 @@
+// this is used for show one to few relationship
+
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-
 
 
 main()
@@ -22,6 +23,8 @@ const userSchema = new Schema({
 });
 
 const User = mongoose.model("User", userSchema);
+
+
 const addUser = async () => {
     let user1 = new User({
         username: "sherlockholmes",
