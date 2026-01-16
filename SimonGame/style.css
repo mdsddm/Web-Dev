@@ -1,40 +1,40 @@
 body {
-    text-align: center;
+  text-align: center;
 }
 
 .divBtn {
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 10px solid black;
-    margin: 2.5rem;
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 10px solid black;
+  margin: 2.5rem;
 }
 
 #containerDiv {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .red {
-    background: #D55075;
+  background: #d55075;
 }
 
 .yellow {
-    background: #FA903B;
+  background: #fa903b;
 }
 
 .green {
-    background: #58A0B9;
+  background: #58a0b9;
 }
 
 .purple {
-    background: #7794F8;
+  background: #7794f8;
 }
 
 .flash {
-    background: whitesmoke;
+  background: whitesmoke;
 }
 
 .userFlash {
-    background: cyan;
+  background: cyan;
 }
