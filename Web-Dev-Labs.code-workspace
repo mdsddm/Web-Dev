@@ -1,0 +1,64 @@
+{
+	"folders": [
+		{
+			"path": "BubblingAndDelegation"
+		},
+		{
+			"path": "ConnectFlashDemo"
+		},
+		{
+			"path": "CookieDemo"
+		},
+		{
+			"path": "EJSDemo"
+		},
+		{
+			"path": "ErrorHandlingMiddlewares"
+		},
+		{
+			"path": "exportWorking"
+		},
+		{
+			"path": "ExpressJsDemo"
+		},
+		{
+			"path": "FigletDir"
+		},
+		{
+			"path": "importModuleDemo"
+		},
+		{
+			"path": "JsOOps"
+		},
+		{
+			"path": "Middlewares"
+		},
+		{
+			"path": "Miscellaneous"
+		},
+		{
+			"path": "MONGO"
+		},
+		{
+			"path": "MONGOEXPRESS"
+		},
+		{
+			"path": "nodeRun"
+		},
+		{
+			"path": "process-argv"
+		},
+		{
+			"path": "RELATIONSHIPS"
+		},
+		{
+			"path": "rest_class"
+		},
+		{
+			"path": "SessionExpressDemo"
+		},
+		{
+			"path": "SimonGame"
+		}
+	]
+}
